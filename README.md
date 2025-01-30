@@ -1,3 +1,5 @@
+![Captura de tela de 2025-01-30 17-21-39](https://github.com/user-attachments/assets/3d8fbbbf-8f8b-4034-a4ea-d90d051f249c)
+
 # Lista de Tarefas
 
 Um aplicativo web simples para gerenciar tarefas, desenvolvido com Flask (Python), HTML, CSS e JavaScript. O aplicativo permite adicionar, editar, marcar como concluída e excluir tarefas, com persistência de dados em um banco de dados SQLite.
