@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dark-mode.css') }}" id="dark-mode">
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}" id="icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Minha Lista de Tarefas</h1>
+            <div class="controls">
+                <button class="help" onclick="showHelp()">❓ Ajuda</button>
+            </div>
+        </header>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa..." 
+                   aria-label="Nova tarefa" maxlength="200">
+            <button class="add-btn" onclick="addTask()">➕ Adicionar</button>
+        </div>
+        <div class="stats">
+            <span id="totalTasks">0 tarefas</span>
+            <span id="completedTasks">0 concluídas</span>
+        </div>
+        <div class="loading" id="loading">Carregando...</div>
+        <ul id="taskList" aria-label="Lista de tarefas"></ul>
+        <div class="error" id="error"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
